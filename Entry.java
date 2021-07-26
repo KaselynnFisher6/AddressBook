@@ -84,10 +84,9 @@ public class Entry
         
         Pattern pat = Pattern.compile(emailregex);
         String email = scan.nextLine();
-        boolean match = pat.matcher(email).matches();
         while(true)
         {
-            if (match == true)
+            if (pat.matcher(email).matches())
             {
                 this.email = email;
                 break;
